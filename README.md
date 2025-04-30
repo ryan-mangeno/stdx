@@ -7,7 +7,7 @@
 
 ## Overview
 
-C-- is a C++ library extension that enhances the standard library with improved STL components and powerful compile-time utilities. It is designed to extend the capabilities of the language, making C++ more expressive, efficient, and modular for modern development.
+C-- is a C++ library extension that enhances the standard library with improved STL components and powerful compile-time utilities. It is designed to extend the capabilities of the language, making C++ more expressive, efficient, and modular for modern development. You may ask, "Why --, why not +++, or ++++, or even +++++?" We tried ... but the compiler mistook it for a Riemann sum and exploded :(
 
 
 ## Features So Far
