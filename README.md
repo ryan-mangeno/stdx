@@ -1,7 +1,8 @@
 # C--: C++ With Extensions
 
 
-![cpicture](https://github.com/user-attachments/assets/34157fd0-2f65-4007-a91c-f8235fa332b0)
+![cpicture](https://github.com/user-attachments/assets/6153f1ac-aa9d-4c85-8871-d6a1ccfdc507)
+
 
 Yes, the drawing is a little goofy ... I know
 
