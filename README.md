@@ -1,10 +1,9 @@
 # C--: C++ With Extensions
 
 
-![cpicture](https://github.com/user-attachments/assets/6153f1ac-aa9d-4c85-8871-d6a1ccfdc507)
+![image](https://github.com/user-attachments/assets/4c199364-43b1-4d74-9977-ee3ff64df549)
 
-
-Yes, the drawing is a little goofy ... I know
+- Disclaimer -> This is not the C-- Language
 
 ## Overview
 
