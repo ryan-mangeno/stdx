@@ -2,6 +2,8 @@
 
 ![cpicture](https://github.com/user-attachments/assets/89df1524-ab3a-4735-a164-7b18fd03c8f4)
 
+Yes, the drawing is a little goofy ... I know
+
 ## Overview
 
 C-- is an experimental C++ library designed to extend the language's capabilities. 
