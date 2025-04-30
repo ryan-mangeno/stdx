@@ -3,7 +3,25 @@
 
 int free_function(int x) { return x * 2; }
 
+void say_hello() {
+    std::cout << "Hello\n";
+}
+
+struct Greeter {
+    void operator()() const {
+        std::cout << "Greetings!\n";
+    }
+};
+
 int main(){
+
+    // polymorphism with inline_function, both greeting functions are type void so this is valid
+    inline_function<void(), 32>  greet = say_hello;
+    greet();
+
+    greet = Greeter();
+    greet();
+
     // storing a free function
     inline_function<int(int), 32> fn = free_function;
     std::cout << fn(21) << "\n"; // 42

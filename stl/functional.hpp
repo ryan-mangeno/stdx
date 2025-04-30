@@ -33,8 +33,6 @@ Benefits:
 
 Drawbacks:
 - **Size limitation**: The callable is stored in a fixed-size buffer. If the callable is too large to fit, a compilation error occurs.
-- **No polymorphism**: Unlike `std::function`, this class does not support polymorphic callables (i.e., you cannot store multiple
-  different types of callable objects unless they are all small enough to fit in the buffer)
 - **No dynamic resizing**: If the callable exceeds the buffer size, you must increase the buffer size manually or redesign
 
 Use Cases:
