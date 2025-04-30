@@ -1,5 +1,6 @@
 # C--: C++ With Extensions
 
+This is an ongoing project, and for the forseeable future there won't be an end to it, if I come across something that I feel could be improved, I will likely add it here.
 
 ![image](https://github.com/user-attachments/assets/4c199364-43b1-4d74-9977-ee3ff64df549)
 
