@@ -13,12 +13,12 @@
 
      using Script = TokenList<If, EnemyNear, Then, Attack>;
 
- You can then build matching rules like:
+ You can then build matching a matching rule like:
 
-     using Condition = AndThen<MatchOne<If>, MatchOne<EnemyNear>>;
+     using Condition = IfThen<If, EnemyNear, Then, Attack>;
 
- and use the muncher to verify and consume these rules at compile time
- additionally, a condition could simply satisfy a leading part of a rule
+ on face value, it may seem repetive, but ... 
+ a condition could also simply satisfy a leading part of a rule
  this is useful for making a rule that can match multiple predicates
      
          using Predicate1 = IfThenRule<If, Water, Then, Drink>;
