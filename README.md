@@ -3,7 +3,7 @@
 
 ![image](https://github.com/user-attachments/assets/4c199364-43b1-4d74-9977-ee3ff64df549)
 
-- Disclaimer -> This is not the C-- Language
+- Disclaimer, this is not the code language [C--](https://en.wikipedia.org/wiki/C--#:~:text=C%2D%2D%20is%20a%20%22portable,to%20a%20C%2D%2D%20compiler.)
 
 ## Overview
 
