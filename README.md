@@ -13,7 +13,7 @@ stdx is a repo hosting C++ library extensions including improved STL components 
 - **Stl Optimizations**: std::function for sbo
 
 
-To use C-- in your project:
+To use stdx:
 
 1. Clone the repository:
 
