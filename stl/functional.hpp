@@ -118,7 +118,8 @@ public:
         // In other words is equivalent to reinterpret_cast<Fun*>(buffer)->Fun(std::forward<F>(f));
         new (buffer) Fun(std::forward<F>(f));
 
-        // build the vtable for Fun (same as before)
+        // build the vtable for function, since the vtable can be determined at compile time and gets put into static memory since
+        // its address is accessed, it also must be static since else it would be a dangling pointer
         static constexpr const vtbl_t vt = {
             // invoke
             [](void* obj, Args&&... args)->R {

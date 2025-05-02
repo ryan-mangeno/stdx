@@ -22,6 +22,8 @@ int main(){
     greet = Greeter();
     greet();
 
+    std::cout << "Base Size of inline func " << sizeof(inline_function<void(), 32>) << "\n"; // 32 bytes for the buffer + vtable pointer
+
     // storing a free function
     inline_function<int(int), 32> fn = free_function;
     std::cout << fn(21) << "\n"; // 42
@@ -29,7 +31,7 @@ int main(){
     // store a lambda with capture
     long long factor = 3;
     fn = [factor](int x){ int a = 0; return x * factor; };
-    std::cout << "Size of fn: " << sizeof(fn) << "\n";  // 32 + 8 for bfufer and vtable
+    std::cout << "Size of fn: " << sizeof(fn) << "\n";  // 32 + 8 for buffer and vtable
 
     auto stl_fn = [factor](int x){ return x * factor; };
     std::cout << "Size of stl_fn: " << sizeof(stl_fn) << "\n";
