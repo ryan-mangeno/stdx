@@ -6,6 +6,9 @@ This is an ongoing project, and for the forseeable future there won't be an end 
 
 stdx is a repo hosting C++ library extensions including improved STL components and powerful compile-time utilities. It is designed to extend the capabilities of the language, making C++ more expressive, efficient, and modular for modern development. 
 
+## Todo
+
+- **is_container**: compile time macro for better templating
 
 ## Features So Far
 
