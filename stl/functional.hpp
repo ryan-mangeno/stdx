@@ -6,44 +6,12 @@
 #include <iostream>
 #include <stdexcept>
 
-#include <functional> // This seems counterintuitive, but I use std::bad_function_call
-
-/**
-
-note -> unless sbo is used, then this is achiving the same as std::function in that case, but this enforces it
-
-inline_function<R(Args...), N>
-
-This class implements a lightweight, allocation-free function wrapper (similar to std::function) that stores 
-callable objects (like lambdas, function pointers, or function objects) directly in a small inline buffer
-
-Key Features:
-- **No heap allocations**: Callables are stored inline in a small fixed-size buffer (default: 64 bytes), which eliminates
-  the overhead of dynamic memory allocations for small callables.
-- **Minimal indirection**: Instead of using a full vtable or control block, the function pointer (`invoke`, `move`, `destroy`)
-  is embedded directly into the object, improving performance by reducing memory indirection and improving cache locality
-- **Trivially relocatable**: The callables are stored directly in the buffer, which is trivially relocatable and efficient
-
-Benefits:
-- **Performance**: No heap allocations, minimal indirections, better cache locality.
-- **Small Object Optimization**: If the callable fits within the provided buffer size, everything stays on the stack without
-  requiring heap memory, making it efficient for small, frequently invoked callables
-- **No heap fragmentation**: Since there's no dynamic memory allocation, this is great for performance-critical applications
-  or systems with limited memory like embedded systems.
-
-Drawbacks:
-- **Size limitation**: The callable is stored in a fixed-size buffer. If the callable is too large to fit, a compilation error occurs.
-- **No dynamic resizing**: If the callable exceeds the buffer size, you must increase the buffer size manually or redesign
-
-Use Cases:
-- **High-performance applications**: Where reducing heap allocations and minimizing indirection is crucial for performance
-- **Embedded systems**: Where memory constraints require avoiding dynamic allocations and the callables are relatively small
+#include <functional> 
 
 
-This approach is well-suited to scenarios where you need a fast, lightweight alternative to `std::function` and the callables 
-you need to store are small enough to fit within a predefined buffer. It’s not suitable for general-purpose use cases with 
-large callables or polymorphic behavior.
- */
+
+// explicit small object optimization for std function to avoid heap stuff
+
 
 template<typename Signature, size_t BufferBytes = 64>
 class inline_function;
