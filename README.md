@@ -11,8 +11,6 @@ stdx is a repo hosting C++ library extensions including improved STL components 
 - **is_container**: compile time macro for better templating
 
 ## Features So Far
-
-- **Compile-Time Templating**: Added a recursive token muncher
 - **Stl Optimizations**: std::function for sbo
 
 
@@ -21,7 +19,7 @@ To use stdx:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/anakin004/C--.git
+   git clone https://github.com/ryan-mangeno/stdx.git
 
 2. Look through what you might want to try, each optimized or added implimentation should have
    explanations and examples
