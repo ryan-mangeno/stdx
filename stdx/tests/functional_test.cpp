@@ -1,4 +1,4 @@
-#include "../include/functional.hpp"
+#include "../include/functional.h"
 
 #include <stdio.h>
 

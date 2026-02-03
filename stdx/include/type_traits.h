@@ -6,7 +6,7 @@ namespace stdx {
     template<typename T> struct remove_reference      { using type = T; };
     template<typename T> struct remove_reference<T&>  { using type = T; };
     template<typename T> struct remove_reference<T&&> { using type = T; };
-    template<typename T> using remove_reference_t = typename remove_reference<T>::type;
+    template<typename T> using  remove_reference_t    = typename remove_reference<T>::type;
 
     // --- std::move ---
     template<typename T>
@@ -22,8 +22,8 @@ namespace stdx {
 
     // --- std::enable_if ---
     template<bool B, typename T = void> struct enable_if {};
-    template<typename T> struct enable_if<true, T> { using type = T; };
-    template<bool B, typename T = void> using enable_if_t = typename enable_if<B, T>::type;
+    template<typename T>                struct enable_if<true, T> { using type = T; };
+    template<bool B, typename T = void> using  enable_if_t = typename enable_if<B, T>::type;
 
     // --- std::decay (simplified) ---
     template<typename T>
@@ -33,8 +33,8 @@ namespace stdx {
     template<typename T> using decay_t = typename decay<T>::type;
 
     // --- std::is_same ---
-    template<typename T, typename U> struct is_same { static constexpr bool value = false; };
-    template<typename T> struct is_same<T, T> { static constexpr bool value = true; };
+    template<typename T, typename U> struct is_same       { static constexpr bool value = false; };
+    template<typename T>             struct is_same<T, T> { static constexpr bool value = true; };
 
     // --- std::is_function ---
     template<typename T> 
