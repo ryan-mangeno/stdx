@@ -1,5 +1,3 @@
-# C++ With Extensions
-
 This is a repo consisting of my own implementations of stl tools so it can be used without invoking runtimes, useful with cross compatability, and also great for learning!
 
 To use stdx:
